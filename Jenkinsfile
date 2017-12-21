@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'python3 -V'
         echo 'Running test script'
-        sh 'testscript.py'
+        sh 'python3 testscript.py'
       }
     }
   }
