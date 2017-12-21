@@ -5,7 +5,8 @@ pipeline {
       steps {
         sh 'python3 -V'
         echo 'Running test script'
-        sh 'python3 testscript.py'
+        sh 'chmod +x testscript.py'
+        sh './testscript.py'
       }
     }
   }
